@@ -13,3 +13,6 @@ Thumbs.db
 .env*
 secrets/
 credentials/
+
+# Personal builds (docs/PLAN.md §5) — never commit
+.local/
