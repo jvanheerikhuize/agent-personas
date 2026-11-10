@@ -1,41 +1,47 @@
-# Security Policy
+# Security and safety
 
-## What this repository contains
+This repository is a set of plain-text prompts. The main risk is what a persona
+says to a vulnerable person. A prompt can lower that risk; it cannot guarantee
+safety on its own.
 
-This is a library of plain-text AI prompt files. It contains no executable code, no credentials, no runtime services, and no external dependencies. The primary security consideration is **prompt content** — what the prompts instruct an AI to do, and whether that could cause harm when deployed.
+## Reporting a problem
 
-## Scope
-
-Security concerns relevant to this repository:
-
-- **Prompt injection vectors** — a role prompt that could be manipulated to override safety constraints or produce harmful output
-- **Unsafe defaults in health roles** — crisis detection, safe-messaging guidelines, or GDPR disclosures that are missing, incorrect, or misleading
-- **Misinformation risk** — a role that makes false authoritative claims (medical, legal, financial) without appropriate scope limits
-- **Privacy risk** — a role that inadvertently encourages users to share sensitive personal data without disclosure
-
-Out of scope: issues with the LLM itself, the platform you run the prompts on, or your own deployment infrastructure.
-
-## Reporting a vulnerability
-
-If you find a security issue in any role prompt, **do not open a public issue**.
-
-Report privately via [GitHub Security Advisories](../../security/advisories/new) or email the repository owner directly.
-
-Please include:
-- Which role is affected
-- A description of the issue and its potential impact
-- Steps to reproduce or an example of the problematic behaviour
-- A suggested fix if you have one
-
+If a persona can be led to give harmful content, mishandles a crisis, or
+misinforms someone in a way that could hurt them, **do not open a public issue**.
+Report it privately through [GitHub Security Advisories](../../security/advisories/new).
+Include the persona, the model, the conversation, and what should have happened.
 You can expect an acknowledgement within 5 business days.
 
-## Health role safety
+## What the personas do
 
-P.S.Y., F.R.A.N.K. and V.I.T.A. include a crisis protocol with tiered response.
-**P.A.P.A. currently has no crisis or child-safeguarding protocol**; add
-platform-level safeguards before deploying it. All four health roles include:
-- Safe-messaging guidelines for sensitive topics (except P.A.P.A.)
-- GDPR Art. 9 disclosure for health data
-- Explicit scope limits (these roles are not a substitute for clinical care)
+Personas marked `safety: core` (P.S.Y., F.R.A.N.K., V.I.T.A., P.A.P.A.) or
+`safety: core-minors` (A.G.O.R.A., M.E.N.T.O.R.) carry the shared safety block
+from [`safety/`](safety/): crisis recognition and response, safe messaging,
+domestic-violence and child-safety handling, and a crisis-resource list. CI checks
+that every copy matches the source. Each safety promise is tested by a `tier: safety`
+case in [`evals/`](evals/).
 
-Before deploying a health role in a product, verify that crisis line numbers are current and correct for your target region. The defaults are placeholders.
+## What the deployer must do
+
+If you put a persona in front of other people, you are the operator, and these
+are yours:
+
+- **Crisis resources.** Check the numbers in `safety/core.md` for your users'
+  region before going live, and re-check them yearly. Numbers change.
+- **Platform safeguards.** Add your own moderation and escalation. Do not rely on
+  the prompt alone, especially for users in distress.
+- **Law.** For example: EU AI Act Art. 50 (users must know they are talking to an
+  AI, applicable since 2 August 2026); GDPR, including Art. 9 for health data and a
+  DPIA (Art. 35) for large-scale processing; companion-chatbot laws such as
+  California SB 243 (operator duties for suicide/self-harm protocols, effective
+  1 January 2026). The personas disclose that they are AI and give a privacy note,
+  but compliance belongs to the deployment, not the text.
+- **Audience.** Decide whether the persona fits your users. In particular:
+  - **P.S.Y.**: vulnerable users. Phase 1 stabilisation only; not clinical care.
+  - **F.R.A.N.K.**: may surface domestic violence. One person's perspective only;
+    not couples therapy or legal advice.
+  - **V.I.T.A.**: collects health data in every session; not medical, dietary or
+    eating-disorder care.
+  - **P.A.P.A.**: processes data about a minor; not family therapy or legal advice.
+  - **A.G.O.R.A.**, **M.E.N.T.O.R.**: may be used by children. Review against your
+    safeguarding policy and show a visible disclaimer.
