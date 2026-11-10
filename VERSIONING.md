@@ -10,8 +10,7 @@ the generated `index.yaml`. Every release is tagged with a matching `v`-prefixed
 
 **Current status:** `0.1.0`, the extraction from Agent-Roles. The personas are
 unchanged from Agent-Roles `v2.0.0-alpha.3`. While the version is `0.x`, the layout
-and the persona format may still change between minor versions, as planned in
-[docs/PLAN.md](docs/PLAN.md). `v1.0.0` is released at the end of that plan.
+and the persona format may still change between minor versions.
 
 Each persona also carries its own `version` in its frontmatter, bumped when its
 behaviour changes.

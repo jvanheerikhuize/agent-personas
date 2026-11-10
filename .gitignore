@@ -14,5 +14,5 @@ Thumbs.db
 secrets/
 credentials/
 
-# Personal builds (docs/PLAN.md §5) — never commit
+# Personal builds — never commit
 .local/

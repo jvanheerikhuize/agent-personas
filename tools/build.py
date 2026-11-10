@@ -249,47 +249,6 @@ def emit_index(catalog: dict, roles: list[dict]) -> str:
     return "\n".join(out)
 
 
-# role.md frontmatter emission (used by tools/migrate.py; kept next to the
-# index emitter so both serializations stay in sync).
-
-def emit_frontmatter(meta: dict) -> str:
-    out = ["---"]
-    for key in ("id", "name", "category", "version", "status"):
-        out.append(f"{key}: {scalar(meta[key], key)}")
-    out.append("description: >")
-    out.extend(folded(meta["description"], 2))
-    out.append("tags:")
-    out.extend(block_list(meta["tags"], 2))
-    out.append("targets:")
-    out.extend(block_list(meta["targets"], 2))
-    out.append(f"interaction: {meta['interaction']}")
-    out.append("usage:")
-    for key in ("paste_in", "system_prompt", "auto_init"):
-        out.append(f"  {key}: {scalar(meta['usage'][key])}")
-    if "safety_notes" in meta:
-        out.append("safety_notes: |")
-        out.extend(literal(meta["safety_notes"], 2))
-    out.append("governance:")
-    for key in GOVERNANCE_ORDER:
-        if key in meta["governance"]:
-            out.append(f"  {key}: {scalar(meta['governance'][key])}")
-    out.append("provenance:")
-    for key in ("author", "created", "last_updated"):
-        out.append(f"  {key}: {scalar(meta['provenance'][key], key)}")
-    rel = meta.get("relations")
-    if rel:
-        out.append("relations:")
-        for key in ("group", "companions", "chain_after", "chain_before", "meta_target"):
-            if key in rel:
-                value = rel[key]
-                if isinstance(value, list):
-                    out.append(f"  {key}: {inline_list(value)}")
-                else:
-                    out.append(f"  {key}: {value}")
-    out.append("---")
-    return "\n".join(out)
-
-
 # ---------------------------------------------------------------------------
 # Build
 # ---------------------------------------------------------------------------

@@ -13,8 +13,8 @@ a system prompt in any model.
 - LLM-agnostic, and proven so by evals across model families, not just claimed.
 - Safety is structural: personas at medium risk or above cannot be built without the
   shared safety kernel.
-- No personal data in this repo. Personal context comes from outside (see
-  docs/PLAN.md, "Personal context") and is never committed here.
+- No personal data in this repo. Personal context comes from outside the repo and is
+  never committed here.
 
 **Success metric:** Anyone can take a persona, paste it in, and get consistent,
 safe behaviour, and every safety promise a persona makes is covered by a passing
