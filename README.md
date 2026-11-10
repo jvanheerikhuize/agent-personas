@@ -3,7 +3,7 @@
 # Agent Personas
 
 **Conversational AI personas you paste into any chat or system prompt.**
-Safe by construction, LLM-agnostic, one file per persona.
+One file per persona, written to work in any capable model.
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Personas](https://img.shields.io/badge/roles-8-brightgreen.svg)](index.yaml)

@@ -31,9 +31,10 @@ You can expect an acknowledgement within 5 business days.
 
 ## Health role safety
 
-The health roles (P.S.Y., F.R.A.N.K., V.I.T.A., P.A.P.A.) include:
-- Mandatory crisis detection with tiered response
-- Safe-messaging guidelines for sensitive topics
+P.S.Y., F.R.A.N.K. and V.I.T.A. include a crisis protocol with tiered response.
+**P.A.P.A. currently has no crisis or child-safeguarding protocol**; add
+platform-level safeguards before deploying it. All four health roles include:
+- Safe-messaging guidelines for sensitive topics (except P.A.P.A.)
 - GDPR Art. 9 disclosure for health data
 - Explicit scope limits (these roles are not a substitute for clinical care)
 

@@ -6,9 +6,9 @@
 
 ## Overview
 
-P.A.P.A. is a parenting companion for divorced dads raising a teenage son in a co-parenting arrangement. It gives practical, plain-language advice — including the actual words to say — and helps make sense of what is driving both the dad's reactions and the son's behaviour. Sessions are grounded in the specific rhythm of week-on/week-off co-parenting with a Wednesday custody switch.
+P.A.P.A. is a parenting companion for divorced dads raising a teenage son in a co-parenting arrangement. It gives practical, plain-language advice — including the actual words to say — and helps make sense of what is driving both the dad's reactions and the son's behaviour. Sessions are grounded in the specific rhythm of week-on/week-off co-parenting and its handover days.
 
-What makes P.A.P.A. distinctive is its dual-perspective engine: it never gives advice without first naming what is likely going on for both people. The dad's motivations come first — the unspoken stuff that shapes his responses — then a developmental hypothesis about the son, calibrated for a teenage boy (born 2011) navigating two homes and growing up. Every advice turn ends with a phrase the dad can actually repeat to his son.
+What makes P.A.P.A. distinctive is its dual-perspective engine: it never gives advice without first naming what is likely going on for both people. The dad's motivations come first — the unspoken stuff that shapes his responses — then a developmental hypothesis about the son, calibrated for a teenage boy navigating two homes and growing up. Every advice turn ends with a phrase the dad can actually repeat to his son.
 
 P.A.P.A. handles multilingual sessions, delivers a GDPR Art. 9 privacy notice at session open, and applies a dark-humor register directed at the absurdity of parenting situations — never at the dad or his son. It does not provide legal advice, render verdicts on the co-parent, or directly address the son.
 
@@ -24,10 +24,10 @@ P.A.P.A. handles multilingual sessions, delivers a GDPR Art. 9 privacy notice at
 
 ## Usage Examples
 
-### 1 — Re-entry friction after the Wednesday switch
+### 1 — Re-entry friction after the handover
 
 ```
-My son came back on Wednesday and he's been moody and distant since. He barely
+My son came back on handover day and he's been moody and distant since. He barely
 talks to me and spends all his time in his room. I don't know if I've done
 something or if it's just the transition.
 ```
@@ -55,7 +55,7 @@ I think my son heard some of it. He's been weird with me ever since and I'm
 worried I've damaged something.
 ```
 
-P.A.P.A. names the dad's guilt and the fear underneath it, then offers a developmental perspective: teenagers are acutely aware of parental tension and tend to take it on as their own load. Advice focuses on a brief, honest acknowledgement without pulling the son into the conflict — with an exact phrase and timing guidance relative to the next Wednesday switch.
+P.A.P.A. names the dad's guilt and the fear underneath it, then offers a developmental perspective: teenagers are acutely aware of parental tension and tend to take it on as their own load. Advice focuses on a brief, honest acknowledgement without pulling the son into the conflict — with an exact phrase and timing guidance relative to the next handover.
 
 ---
 
@@ -83,7 +83,7 @@ client = anthropic.Anthropic()
 response = client.messages.create(
     model="claude-opus-4-6",
     system=role_prompt,
-    messages=[{"role": "user", "content": "My son came back Wednesday and hasn't said a word to me since."}],
+    messages=[{"role": "user", "content": "My son came back on handover day and hasn't said a word to me since."}],
 )
 print(response.content[0].text)
 ```

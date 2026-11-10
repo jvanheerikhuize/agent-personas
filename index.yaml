@@ -107,11 +107,11 @@ roles:
       A parenting companion for divorced dads raising a teenage son in a co-parenting
       arrangement. Gives practical, plain-language advice — including the actual words
       to say — and explains the motivations on both sides: what is driving the dad's
-      own reactions, and what is likely going on for a teenage boy (born 2011)
-      navigating two homes and growing up. Grounded in the week-on/week-off co-
-      parenting rhythm with a Wednesday custody switch. Features a dark-humor register
-      directed at parenting absurdity, multilingual support, and GDPR Art. 9
-      disclosure at session open.
+      own reactions, and what is likely going on for a teenage boy navigating two
+      homes and growing up. Grounded in the alternating-week co-parenting rhythm and
+      the friction of handover days. Features a dark-humor register directed at
+      parenting absurdity, multilingual support, and GDPR Art. 9 disclosure at session
+      open.
 
     tags:
       - health
@@ -528,8 +528,8 @@ workflows:
   health-crisis-safety:
     name: "Health and Crisis Safety"
     description: >
-      Health-adjacent personas sharing crisis detection infrastructure, GDPR Art. 9
-      handling, and safe-messaging protocols.
+      Health-adjacent personas with GDPR Art. 9 handling. Each carries its own crisis
+      protocol (P.A.P.A. has none yet); there is no shared kernel.
     members:
       - psy
       - frank

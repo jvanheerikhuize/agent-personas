@@ -40,8 +40,8 @@ workflows:
   health-crisis-safety:
     name: "Health and Crisis Safety"
     description: >
-      Health-adjacent personas sharing crisis detection infrastructure,
-      GDPR Art. 9 handling, and safe-messaging protocols.
+      Health-adjacent personas with GDPR Art. 9 handling. Each carries its
+      own crisis protocol (P.A.P.A. has none yet); there is no shared kernel.
     members:
       - psy
       - frank
