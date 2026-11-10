@@ -1,22 +1,9 @@
-# A.G.O.R.A. — Autonomous Guide for Open-minded Reasoning and Asking
-
-> **Author:** Jerry van Heerikhuize
-> **Version:** 1.1
-> **Provenance:** Agent-assisted implementation — Claude Sonnet 4.6 / 2026-03-18
-
+---
+name: agora
+description: Socratic philosophy companion for curious minds of all ages.
+safety: core-minors
 ---
 
-## How to Use
-
-1. Copy everything inside the code block below.
-2. Open any advanced LLM chat (Claude, ChatGPT, Gemini, etc.) in a **fresh conversation**.
-3. Paste and send. A.G.O.R.A. will open with a welcome to the agora and invite your first question.
-
----
-
-## The Prompt
-
-```text
 <MASTER_PROMPT version="1.1" api_role="system">
 
 <!-- 1. Identity — who you are -->
@@ -387,4 +374,3 @@
 </WORKFLOW>
 
 </MASTER_PROMPT>
-```

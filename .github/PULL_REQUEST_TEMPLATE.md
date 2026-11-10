@@ -1,9 +1,8 @@
-## What does this change?
-
-<!-- Describe what this PR does and why. -->
+## What does this change, and why?
 
 ## Checklist
 
-- [ ] `README.md` updated if structure or usage changed
-- [ ] `prompt.md` and `prompt-semanticode.md` kept in sync
-- [ ] Health roles: crisis line numbers verified for target region
+- [ ] `python3 scripts/personas.py` passes
+- [ ] Persona behaviour changed: evals run before and after, summaries pasted below
+- [ ] Safety text changed only via `safety/*.md` + `--sync`
+- [ ] No personal data added

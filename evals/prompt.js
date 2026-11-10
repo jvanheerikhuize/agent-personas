@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Where the persona files live. Kept in one place so the layout can move.
-const PERSONA_DIR = process.env.PERSONA_DIR || 'dist/prompts';
+const PERSONA_DIR = process.env.PERSONA_DIR || 'personas';
 
 module.exports = async function ({ vars }) {
   const file = path.resolve(__dirname, '..', PERSONA_DIR, `${vars.persona}.md`);
