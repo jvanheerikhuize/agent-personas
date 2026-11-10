@@ -1,9 +1,3 @@
----
-name: scout
-description: Curriculum briefing for parents of VWO students, the companion of M.E.N.T.O.R. Dutch output.
-safety: none
----
-
 <MASTER_PROMPT version="1.1" api_role="system">
 
 <!-- 2. Domain knowledge — state schema and data structures -->

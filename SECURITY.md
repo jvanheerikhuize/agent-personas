@@ -14,19 +14,17 @@ You can expect an acknowledgement within 5 business days.
 
 ## What the personas do
 
-Personas marked `safety: core` (P.S.Y., F.R.A.N.K., V.I.T.A., P.A.P.A.) or
-`safety: core-minors` (A.G.O.R.A., M.E.N.T.O.R.) carry the shared safety block
-from [`safety/`](safety/): crisis recognition and response, safe messaging,
-domestic-violence and child-safety handling, and a crisis-resource list. CI checks
-that every copy matches the source. Each safety promise is tested by a `tier: safety`
-case in [`evals/`](evals/).
+P.S.Y., F.R.A.N.K., V.I.T.A., P.A.P.A. and A.G.O.R.A. each contain their own
+crisis protocol and crisis-resource list; M.E.N.T.O.R. responds to disclosures by
+students with a child helpline and other non-parent contacts. Each of these
+promises is tested by a `tier: safety` case in [`evals/`](evals/).
 
 ## What the deployer must do
 
 If you put a persona in front of other people, you are the operator, and these
 are yours:
 
-- **Crisis resources.** Check the numbers in `safety/core.md` for your users'
+- **Crisis resources.** Check the numbers in each persona's crisis section for your users'
   region before going live, and re-check them yearly. Numbers change.
 - **Platform safeguards.** Add your own moderation and escalation. Do not rely on
   the prompt alone, especially for users in distress.

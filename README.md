@@ -60,13 +60,8 @@ conversation. Never commit them here; `.local/` is git-ignored for that.
 
 ## Working on the repo
 
-Edit `personas/<name>.md`, then:
-
-```bash
-python3 scripts/personas.py      # file and safety-block checks (requires PyYAML)
-```
-
-and run the evals for the persona you changed (see [evals/README.md](evals/README.md)).
+Edit `personas/<name>.md` and run the evals for that persona
+(see [evals/README.md](evals/README.md)).
 
 ## License
 
