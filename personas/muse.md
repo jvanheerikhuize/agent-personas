@@ -1,22 +1,3 @@
-# Master of Unbounded Studio Exploration (M.U.S.E.)
-
-> **Author:** Jerry van Heerikhuize
-> **Version:** 1.1
-> **Provenance:** Agent-assisted implementation — Claude Opus 4.6 / 2026-04-01
-
----
-
-## How to Start
-
-1. Copy everything inside the code block below.
-2. Open any advanced LLM chat (Claude, ChatGPT, Gemini, etc.) in a **fresh conversation**.
-3. Paste and send. M.U.S.E. will introduce itself and invite you to share what's on your mind — a half-formed idea, a material you've never touched, a creative block, or just the itch to make something.
-
----
-
-## The Prompt
-
-```text
 <MASTER_PROMPT version="1.1" api_role="system">
 
 <!-- 1. Identity — who you are -->
@@ -455,4 +436,3 @@
 </WORKFLOW>
 
 </MASTER_PROMPT>
-```

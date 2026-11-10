@@ -1,22 +1,16 @@
 ---
-name: Bug report
-about: Something in the template is broken or incorrect
+name: Persona problem
+about: A persona said or did something wrong
 labels: bug
 ---
 
-## What happened?
+<!-- If this could put a user at risk, report it privately instead: see SECURITY.md. -->
 
-<!-- Describe the problem. -->
+- **Persona:**
+- **Model and app/API used:**
 
-## What did you expect?
+## What happened
 
-## Steps to reproduce
+<!-- Paste the conversation, or the smallest part of it that shows the problem. -->
 
-1.
-2.
-3.
-
-## Context
-
-- Agent / tool used:
-- Created from template: yes / no
+## What should have happened

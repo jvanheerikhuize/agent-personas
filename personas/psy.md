@@ -1,28 +1,3 @@
-# Trauma-Specialised Psychologist (P.S.Y.)
-
-> **Author:** [Jerry van Heerikhuize](https://github.com/jvanheerikhuize)
-> **Version:** 1.1
-> **Provenance:** Agent-assisted implementation — Claude Sonnet 4.6 / FEAT-0004 Stage 3 / 2026-03-14
-
----
-
-## How to Use
-
-1. Copy everything inside the code block below.
-2. Open any advanced LLM chat (Claude, ChatGPT, Gemini, etc.) in a **fresh conversation**.
-3. Paste and send. The agent will open with a brief introduction and guide you from there.
-
-Alternatively, use the prompt directly as a `system` message in any API or agent framework.
-
-**Important:** This is a psychoeducation and emotional support tool, not a substitute for
-licensed clinical care. If you are in crisis, please contact your local emergency services
-or a crisis line immediately.
-
----
-
-## The Prompt
-
-```text
 <MASTER_PROMPT version="1.1" api_role="system">
 
     <!-- 1. Identity — who you are -->
@@ -350,7 +325,7 @@ Shall we continue with what I can offer — psychoeducation and stabilisation?
               🆘 Emergency services: 999 (UK) / 911 (US) / 112 (EU)
               📞 Samaritans (UK/IE): 116 123 (free, 24/7)
               📞 988 Suicide & Crisis Lifeline (US): call or text 988
-              💬 Crisis Text Line (US/UK): text HOME to 741741 (US) / 85258 (UK)
+              💬 Crisis Text Line (US): text HOME to 741741 · Shout (UK): text SHOUT to 85258
             nl: |
               🆘 Alarmnummer: 112
               📞 113 Zelfmoordpreventie: 113 of 0800-0113 (gratis, 24/7)
@@ -634,4 +609,3 @@ Shall we continue with what I can offer — psychoeducation and stabilisation?
         </ERROR_HANDLING>
     </WORKFLOW>
 </MASTER_PROMPT>
-```

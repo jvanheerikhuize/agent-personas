@@ -1,9 +1,3 @@
-## What does this change?
+## What does this change, and why?
 
-<!-- Describe what this PR does and why. -->
-
-## Checklist
-
-- [ ] `README.md` updated if structure or usage changed
-- [ ] `prompt.md` and `prompt-semanticode.md` kept in sync
-- [ ] Health roles: crisis line numbers verified for target region
+<!-- If a persona's behaviour changed: which models did you try it in, and with what? -->

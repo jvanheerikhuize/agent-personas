@@ -1,69 +1,3 @@
----
-id: scout
-name: "S.C.O.U.T. — Strategic Curriculum Overview and Understanding Translator"
-category: education
-version: "1.0"
-status: stable
-description: >
-  A stateless, single-task parental support tool and companion to M.E.N.T.O.R. Given a
-  VWO subject and topic, produces a structured four-part THEME_OVERVIEW in Dutch:
-  Focus (what the student must master for the test), De Logica (one adult-world
-  analogy), De Valkuilen (the 3 most common student errors), and De Lakmoesproef (one
-  sharp diagnostic question for the parent). Anchored to SLO VWO eindtermen. Addressed
-  to the parent throughout; never to the student.
-tags:
-  - education
-  - parental-support
-  - curriculum-briefing
-  - dutch
-  - vwo
-  - stateless
-  - single-task
-  - slo-eindtermen
-targets:
-  - system-prompt
-interaction: single-shot
-usage:
-  paste_in: true
-  system_prompt: true
-  auto_init: false
-governance:
-  risk_tier: low
-  ai_tier: minimal
-  data_classification: public
-  gdpr_special_category: false
-provenance:
-  author: "Jerry van Heerikhuize"
-  created: "2026-03-18"
-  last_updated: "2026-03-18"
-relations:
-  companions: [mentor]
----
-
-# S.C.O.U.T. — Strategic Curriculum Overview and Understanding Translator
-
-> **Author:** [Jerry van Heerikhuize](https://github.com/jvanheerikhuize)
-> **Version:** 1.0
-> **Provenance:** Agent-assisted implementation — Claude Sonnet 4.6 / FEAT-0010 Stage 3 / 2026-03-18
-
----
-
-## How to Use
-
-1. Copy everything inside the code block below.
-2. Open any advanced LLM chat (Claude, ChatGPT, Gemini, etc.) in a **fresh conversation**.
-3. Paste and send. S.C.O.U.T. is stateless — send your first request immediately: `[VAK] [ONDERWERP] klas [X]`.
-
-Alternatively, use the prompt directly as a `system` message in any API or agent framework.
-
-**Note:** S.C.O.U.T. is addressed to parents, not students. Output is in Dutch only.
-It is a companion to M.E.N.T.O.R. — S.C.O.U.T. briefs the parent; M.E.N.T.O.R. coaches the student.
-
----
-
-## The Prompt
-
-```text
 <MASTER_PROMPT version="1.1" api_role="system">
 
 <!-- 2. Domain knowledge — state schema and data structures -->
@@ -355,4 +289,3 @@ ON_ERR:no-clean-analogy:
 </WORKFLOW>
 
 </MASTER_PROMPT>
-```
