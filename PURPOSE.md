@@ -1,9 +1,21 @@
 # Purpose
 
-**Problem:** Creating focused, opinionated AI personas requires consistent prompting and rewriting the same behavioral constraints across different LLMs and platforms.
+**Problem:** "Who to be for a whole conversation" has no standard home. Skills cover
+procedures and `AGENTS.md` covers policy, but a companion persona is still a system
+prompt, and the ones that touch health, relationships or minors carry real risk
+when they are written as ad-hoc prompts.
 
-**Audience:** Developers, researchers, and AI practitioners who need to compose agentic roles for Claude, ChatGPT, Gemini, or other capable models.
+**Audience:** People who paste a persona into a chat, and developers who load one as
+a system prompt in any model.
 
-**Key constraints:** Must be self-contained (single file, copy-paste ready), LLM-agnostic, and token-efficient enough for API use without fine-tuning or platform-specific configuration.
+**Key constraints:**
+- Paste-in is first-class: one self-contained prompt per persona, no tools required.
+- LLM-agnostic, and proven so by evals across model families, not just claimed.
+- Safety is structural: personas at medium risk or above cannot be built without the
+  shared safety kernel.
+- No personal data in this repo. Personal context comes from outside (see
+  docs/PLAN.md, "Personal context") and is never committed here.
 
-**Success metric:** A developer can grab any role, paste it into a chat or API call, and immediately see consistent behavior without platform-specific setup.
+**Success metric:** Anyone can take a persona, paste it in, and get consistent,
+safe behaviour, and every safety promise a persona makes is covered by a passing
+eval.

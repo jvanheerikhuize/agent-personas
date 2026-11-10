@@ -38,7 +38,7 @@ Spotted something unclear, outdated, or missing? Documentation PRs are just as v
 
 Share your concept before building. Include:
 - What the role does and who it's for
-- The category it belongs to (`entertainment`, `engineering`, `health`, `education`, `utility`, or `productivity`)
+- The category it belongs to (`health`, `education`, or `entertainment`)
 - The persona -- tone, humor, voice
 - Any special constraints (sensitive topics, language requirements, scope limits)
 
@@ -119,7 +119,7 @@ Set honestly based on the role's worst-case session, not the typical case:
 - `data_classification` — `public` / `internal` / `confidential` / `restricted`
 - `gdpr_special_category` — `true` / `false` / `conditional` (with comment explaining the condition)
 
-Unsure? Run the spec through the `A.G.L.` role in this library for a tier classification.
+Unsure? Run the spec through the [A.G.L.](https://github.com/jvanheerikhuize/Agent-Roles/blob/main/dist/prompts/agl.md) role in Agent-Roles for a tier classification.
 
 ---
 
