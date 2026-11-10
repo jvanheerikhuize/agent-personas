@@ -14,12 +14,8 @@ read this file to work in the repo or consume it.
   (requires PyYAML) and commit the regenerated artifacts with the source. CI fails if
   they are stale.
 - Validate with `scripts/validate-index.sh` and `scripts/test-roles.sh`.
-- `archive/semanticode/` holds the retired compressed variants of these personas,
-  for provenance only. Nothing there is built or indexed.
 - Never commit personal data. Personal context for a persona is supplied from
-  outside the repo at use time (see `docs/PLAN.md`).
-- The redesign roadmap is `docs/PLAN.md`. Work phase by phase; a phase is done when
-  its exit criterion holds.
+  outside the repo at use time.
 
 ## For agents CONSUMING this repo
 

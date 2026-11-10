@@ -92,12 +92,6 @@ python3 tools/build.py   # requires Python 3 + PyYAML
 It writes `dist/prompts/<slug>.md` and `index.yaml`. Both are committed and CI fails if
 they are stale. **Edit `role.md`, never `dist/` or `index.yaml`.**
 
-## Where this is going
-
-The personas came over from Agent-Roles unchanged. The redesign (safety kernel,
-parameters instead of personal tailoring, short prose instructions, mandatory
-behavioural evals) is planned in [docs/PLAN.md](docs/PLAN.md).
-
 ## Provenance
 
 Extracted from [Agent-Roles](https://github.com/jvanheerikhuize/Agent-Roles) at tag
