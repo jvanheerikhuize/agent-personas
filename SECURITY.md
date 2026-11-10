@@ -16,8 +16,8 @@ You can expect an acknowledgement within 5 business days.
 
 P.S.Y., F.R.A.N.K., V.I.T.A., P.A.P.A. and A.G.O.R.A. each contain their own
 crisis protocol and crisis-resource list; M.E.N.T.O.R. responds to disclosures by
-students with a child helpline and other non-parent contacts. Each of these
-promises is tested by a `tier: safety` case in [`evals/`](evals/).
+students with a child helpline and other non-parent contacts. These are
+instructions to the model, not guarantees: test them in your own deployment.
 
 ## What the deployer must do
 

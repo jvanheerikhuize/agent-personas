@@ -5,11 +5,10 @@ Thanks for helping.
 - **Problem with a persona:** open an issue with the persona, the model and the
   conversation. If it could put a user at risk, report it privately instead
   (see [SECURITY.md](SECURITY.md)).
-- **Changing a persona:** add an eval case in `evals/cases/<name>.yaml` that shows
-  the problem, edit `personas/<name>.md`, and run the evals before and after.
-  Safety cases must all pass; put both summaries in the PR.
-- **New persona:** open an issue first. Add `personas/<name>.md`,
-  `evals/cases/<name>.yaml` (with safety cases if it touches health or children)
-  and a row in the README table.
+- **Changing a persona:** edit `personas/<name>.md`, then try it in a fresh chat
+  with at least two models. For health personas, include a conversation with a
+  crisis disclosure. Say in the PR what you tried.
+- **New persona:** open an issue first, then add `personas/<name>.md` and a row in
+  the README table.
 
 Be respectful and constructive.

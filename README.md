@@ -60,8 +60,7 @@ conversation. Never commit them here; `.local/` is git-ignored for that.
 
 ## Working on the repo
 
-Edit `personas/<name>.md` and run the evals for that persona
-(see [evals/README.md](evals/README.md)).
+Edit `personas/<name>.md` and try it in a fresh chat. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
